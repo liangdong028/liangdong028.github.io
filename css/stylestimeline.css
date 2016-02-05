@@ -1,0 +1,108 @@
+/*-核心代码-*/
+/* Menu style */
+	#timeline {
+		width: 800px;
+		height: 350px;
+		overflow: hidden;
+		margin: 30px auto;
+		position: relative;
+		background: url('../imgs/timelines/images/dot.gif') left 45px repeat-x;
+	}
+		#dates {
+			width: 800px;
+			height: 60px;
+			overflow: hidden;
+		}
+			#dates li {
+				list-style: none;
+				float: left;
+				width: 100px;
+				height: 50px;
+				font-size: 24px;
+				text-align: center;
+				background: url('../imgs/timelines/images/biggerdot.png') center bottom no-repeat;
+			}
+				#dates a {
+					line-height: 38px;
+					padding-bottom: 10px;
+				}
+				#dates .selected {
+			        font-size: 38px;
+				}
+		
+		#issues {
+			width: 800px;
+			height: 350px;
+			overflow: hidden;
+		}	
+			#issues li {
+				width: 800px;
+				height: 350px;
+				list-style: none;
+				float: left;
+			}
+				#issues li img {
+					float: left;
+					margin: 10px 30px 10px 50px;
+				}
+				#issues li h1 {
+					color: #ffcc00;
+					font-size: 48px;
+					margin: 20px 0;
+					text-shadow: #000 1px 1px 2px;
+				}
+				#issues li p {
+					font-size: 18px;
+					margin-right: 70px;
+					font-weight: bolder;
+					line-height: 22px;
+
+				}
+		
+		#grad_left,
+		#grad_right {
+			width: 100px;
+			height: 350px;
+			position: absolute;
+			top: 0;
+
+		}
+			#grad_left {
+		        left: 0;
+		        background: url('../imgs/timelines/images/grad_left.png') repeat-y;
+
+			}
+			#grad_right {
+		        right: 0;
+		        background: url('../imgs/timelines/images/grad_right.png') repeat-y;
+			}
+		
+		#next,
+		#prev {
+			position: absolute;
+			top: 0;
+			font-size: 70px;
+			top: 170px;
+			width: 22px;
+			height: 38px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			text-indent: -9999px;
+			overflow: hidden;
+		}
+			#next:hover,
+			#prev:hover {
+				background-position: 0 -76px;
+			}
+			#next {
+				right: 0;
+				background-image: url('../imgs/timelines/images/next.png');
+			}
+			#prev {
+				left: 0;
+				background-image: url('../imgs/timelines/images/prev.png');
+			}
+				#next.disabled,
+				#prev.disabled {
+					opacity: 0.2;
+				}
