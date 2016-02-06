@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    min-width:1024px;
     font-family: Times New Roman,"Microsoft YaHei","SimHei","STHeiti","Apple LiGothic Medium",Arial;
 
 }
@@ -56,6 +57,7 @@ body {
     position: absolute;
     float: left;
     width: 100%;
+    min-width:1024px;
     z-index: -10;
 
 }
@@ -77,6 +79,7 @@ body {
     text-align: center;
     vertical-align: middle;
     width: 100%;
+    min-width:1024px;
 
 }
 
