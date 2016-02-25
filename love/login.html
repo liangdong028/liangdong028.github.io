@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>商委投票系统V1.2</title>
+    <meta charset="utf-8">
+    <!-- 这意味着，会强制浏览器按照最新的标准去渲染。就像在Google’s CDN使用最新版本的JQuery一样，这是按照最新版本，但也可能由于没有固定的版本而破坏你的布局。-->
+    <!-- content="IE=7; IE=9" 以上就表明，将IE8和IE7按照IE7标准渲染，但是IE9还是按照IE9的标准渲染。它允许有不同的向后兼容水平。-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 初始缩放。即页面初始缩放程度。这是一个浮点值，是页面大小的一个乘数。-->
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/maincss.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicons -->
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2 col-sm-2 col-md-2 .col-xs-3"></div>
+        <div class="col-lg-8 col-sm-8 col-md-8 .col-xs-6">
+            <div><img src="imgs/scalpic.jpg" width="100%" style="margin-top: -70px"/></div>
+            <div class="jumbotron loginall">
+                <h3 class="container">商委投票系统</h3>
+
+                <form>
+                    <div class="input-group input-group-lg form-group">
+                        <span class="input-group-addon" id="jobnum">工号</span>
+                        <input type="text" class="form-control" placeholder="工号"
+                               aria-describedby="jobnum">
+                    </div>
+                    <div class="input-group input-group-lg form-group">
+                        <span class="input-group-addon" id="password">密码</span>
+                        <input type="password" class="form-control" placeholder="密码"
+                               aria-describedby="password">
+                    </div>
+                    <div class=" " style="  text-align: center;">
+                        <p class=""><a
+                                class="btn btn-primary btn-lg" href="#"
+                                role="button"
+                                id="loginbtn">登陆</a>&nbsp;&nbsp;<a
+                                class="btn btn-primary btn-lg" href="#" role="button" id="resetbtn">重置</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-2 col-md-2 .col-xs-3"></div>
+    </div>
+</div>
+
+<footer class="footer   text" role="">
+    <div class="row">
+        <div class="container">
+            <p style="font-weight: bold"><strong>单位地址：</strong>
+                四川省成都市双流县 航空港&nbsp;四川航空大厦<strong>
+                    邮编：</strong>610200</p>
+
+            <P>商务委员会人才库 人才投票系统</P>
+
+            <p> CopyRight@2016 四川航空股份有限公司 商务委员会IT支持部 版权所有</p>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/echarts/build/dist/echarts.js"></script>
+</body>
+</html>
