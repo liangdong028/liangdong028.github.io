@@ -1,0 +1,475 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width:350px;
+    font-family: Times New Roman,"Microsoft YaHei","SimHei","STHeiti","Apple LiGothic Medium",Arial;
+
+}
+
+.loginall{
+  ;
+  margin-top: -50px;
+}
+.rightlist {
+    position: fixed;
+    float: right;
+    right: 1px;
+    top: 130px;
+    z-index: 89;
+
+}
+
+.rightlist ul li {
+    height: 20px;
+    width: 10px;
+    margin: 0 20px;
+    padding: 20px;
+    list-style-type: none;
+    font-size: 29px;
+    cursor: pointer;
+
+}
+
+.rightlist ul li a {
+    display: block;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+}
+
+.alpha {
+    background: rgba(255, 255, 255, 1.0) !important;
+    filter: Alpha(opacity=100);
+}
+
+.navigation {
+    font-weight: bold;
+
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    background: rgba(255, 255, 255, 0.5) !important;
+    filter: Alpha(opacity=50);
+    background: #fff;
+    width: 100%;
+}
+
+.bigtitle {
+
+    position: absolute;
+    float: left;
+    width: 100%;
+    min-width:900px;
+    z-index: -10;
+
+}
+.blur {
+
+    filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    -webkit-filter: blur(17px); /* Chrome, Opera */
+    -moz-filter: blur(17px);
+    -ms-filter: blur(17px);
+    filter: blur(17px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=17, MakeShadow=false); /* IE6~IE9 */
+
+}
+
+.titlebg {
+    background-position: center;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    min-width:900px;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0;
+    border-radius: 1px;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+    color: inherit;
+    background-color: #eee;
+    background: rgba(255, 255, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+    border-radius: 6px;
+}
+
+.myjumbotron {
+    margin-bottom: 30px;
+    margin-top: 80px;
+    color: inherit;
+    background-color: #eee;
+    background: rgba(255, 255, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+    height: 620px;
+
+}
+
+.devjumbotron {
+    margin-bottom: 30px;
+    margin-top: 90px;
+    color: inherit;
+    background-color: #eee;
+    background: rgba(255, 255, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+    height: 650px;
+}
+
+.mydreamjumbotron {
+    margin-bottom: 30px;
+    margin-top: 90px;
+    color: inherit;
+    background-color: #eee;
+    background: rgba(255, 255, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+    height: 650px;
+}
+
+.myhobbyjumbotron {
+    margin-bottom: 30px;
+    margin-top: 90px;
+    color: inherit;
+    background-color: #eee;
+    background: rgba(255, 255, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+    height: 710px;
+}
+
+.text {
+    position: relative;
+    color: #000;
+    font-family: Times New Roman,"Microsoft YaHei","SimHei","STHeiti","Apple LiGothic Medium",Arial;
+}
+
+.indexmainbody {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.centerimages {
+    margin: 0 auto;
+    text-align: center;
+    width: 270px;
+    cursor: pointer;
+
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+
+}
+
+.mydevelop {
+    background: rgba(255, 255, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+}
+
+.alpha {
+    background: rgba(255, 255, 255, 0.88) !important;
+    filter: Alpha(opacity=88);
+}
+
+/**
+实际上比较简单，只需要加一个css设置下hover的状态，把下拉菜单设置成block
+**/
+.nav > li:hover .dropdown-menu {
+    display: block;
+}
+
+.myslides {
+    height: 400px;
+}
+
+.myslidesambiton {
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+    width: 100%;
+    height: 100%;
+}
+
+.myslidesambiton img {
+    margin: 0 auto;
+    padding-top: 20px;
+    cursor: pointer;
+
+}
+
+.resultshow {
+    margin: 0 auto;
+    height: 500px;
+    width: 100% !important;
+    overflow: hidden; /*属性规定当内容溢出元素框时发生的事情*/
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0 #e3e3e3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+
+}
+
+.myslidespics {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    float: left;
+    margin-left: 0;
+    padding-left: 0;
+
+}
+
+.myslidespics li {
+    list-style: none;
+    float: left;
+    margin-left: 0;
+    padding-left: 0;
+    top: 0px;
+    left: 0px;
+}
+
+.mydreamhandle {
+    float: left;
+    margin: 0 2px;
+    width: 50px;
+    height: 500px;
+    cursor: pointer;
+    background: #F0F;
+    font: bold 24px  sans-serif;
+    text-align: center;
+    color: #FFF;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    background: rgba(255, 0, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+}
+
+.mydreamhandle:hover {
+    background: rgba(255, 204, 51, 0.5) !important;
+    filter: Alpha(opacity=50);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
+
+.mydreamselect {
+    background: #FC3;
+    background: rgba(255, 204, 51, 0.3) !important;
+    filter: Alpha(opacity=30);
+}
+
+.mydreamslide {
+
+    float: left;
+    width: 380px;
+    height: 500px;
+    display: none;
+    margin: 0 4px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+}
+
+.mydreamrotate {
+    margin: 50px auto;
+    /*
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    */
+}
+
+.mycollegehonorjumbotron {
+    margin-bottom: 30px;
+    margin-top: 90px;
+    color: inherit;
+    background-color: #eee;
+    background: rgba(255, 255, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+    height: 760px;
+}
+
+.myhonorimgs img {
+    width: 300px;
+}
+
+.myhonorimgs .speechbtn {
+    margin: 0 auto 0;
+    margin-top: 30px;
+    width: 90%;
+    height: 90px;
+    background-color: #337ab7;
+    background: rgba(51, 122, 183, 0.4) !important;
+    filter: Alpha(opacity=40);
+    border-color: rgba(46, 109, 164);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.myworkjumbotron {
+    margin-bottom: 30px;
+    margin-top: 120px;
+    color: inherit;
+    background-color: #eee;
+    background: rgba(255, 255, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+    height: 760px;
+}
+
+.myshopjumbotron {
+    margin-bottom: 10px;
+    margin-top: 130px;
+    color: inherit;
+    background-color: #eee;
+    background: rgba(255, 255, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+    height: 760px;
+}
+
+.mycontactjumbotron {
+    margin-bottom: 20px;
+    margin-top: 170px;
+    color: inherit;
+    background-color: #eee;
+    background: rgba(255, 255, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+    height: 690px;
+}
+
+.myhobbypicswall li img {
+    /* filter: alpha(opacity=80);
+     -moz-opacity: 0.8;
+     -khtml-opacity: 0.8;
+     opacity: 0.8;*/
+}
+
+.myhobbies {
+
+}
+
+.myhobbies * {
+    font-family: Times New Roman,"Microsoft YaHei","SimHei","STHeiti","Apple LiGothic Medium",Arial;
+
+    line-height: 140%;
+}
+
+.myhobbies select, input, textarea {
+    font-size: 1em;
+}
+
+.myhobbies p {
+    font-size: 16px;
+}
+
+.myhobbies h2 {
+    margin-top: 1.2em;
+    margin-bottom: 0;
+    padding: 0;
+    border-bottom: 1px dotted #dedede;
+}
+
+.myhobbies h3 {
+    margin-top: 1.2em;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.myhobbies .example {
+    border: 1px solid #CCC;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+.myhobbies pre {
+
+    border: 1px solid #CCC;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+.myhobbies code {
+
+    margin: 0;
+    padding: 0;
+}
+
+.myhobbies #gallery {
+    padding: 30px;
+    background: #e1eef5;
+    background: rgba(225, 248, 235, 0.3) !important;
+    filter: Alpha(opacity=30);
+}
+
+.myhobbies #descriptions {
+    position: relative;
+    height: 50px;
+    background: #EEE;
+    margin-top: 10px;
+    width: 640px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.myhobbies #descriptions .ad-image-description {
+    position: absolute;
+}
+
+.myhobbies #descriptions .ad-image-description .ad-description-title {
+    display: block;
+}
+
+.myhobbies ul li a img {
+    height: 70px;
+}
+
+.contact {
+
+    top: 0px;
+    left: 0px;
+    float: left;
+    margin-left: 0;
+    padding-left: 0;
+
+}
+
+.contact li {
+    list-style: none;
+    float: left;
+    margin-left: 0;
+    padding-left: 0;
+    top: 0px;
+    left: 0px;
+}
+.contact .mypics{
+    padding: 2px;
+}
+html{
+    font-family: Times New Roman,"Microsoft YaHei","SimHei","STHeiti","Apple LiGothic Medium",Arial;
+}
