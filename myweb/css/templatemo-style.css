@@ -129,7 +129,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     color: #fff;
-    background-color: rgba(96, 163, 193, 0.52);
+    background-color: rgba(96, 163, 193, 0.25);
     font-family: 'robotolight';
 }
 .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
