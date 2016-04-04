@@ -9,7 +9,7 @@ body{color: #0d0d0d;font-size:12px;font-family: Times New Roman,"Microsoft YaHei
 .clear{clear:both;display:block;height:0;overflow:hidden;}
 
 /* history */
-#history{/*width:300px;*/height:418px;position:relative;margin:70px auto 0 ;;margin-left: -250px;}
+#history{width:390px;height:418px;position:relative;margin:70px auto 0 ;;margin-left: -250px;}
 .title{height:95px;line-height:95px;text-indent:280px;}
 .title h2{color: #0a0a0a;font-size:18px;font-weight:500;}
 #circle{
