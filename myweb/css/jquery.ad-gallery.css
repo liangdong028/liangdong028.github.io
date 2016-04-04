@@ -1,12 +1,12 @@
 .ad-gallery {
-  width: 600px;
+  width: 100%;
 }
 .ad-gallery, .ad-gallery * {
   margin: 0;
   padding: 0;
 }
   .ad-gallery .ad-image-wrapper {
-    width: 100%;
+    width: 590px;
     height: 400px;
     margin-bottom: 10px;
     position: relative;
