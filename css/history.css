@@ -9,7 +9,7 @@ body{color: #0d0d0d;font-size:12px;font-family: Times New Roman,"Microsoft YaHei
 .clear{clear:both;display:block;height:0;overflow:hidden;}
 
 /* history */
-#history{width:900px;height:610px;position:relative;margin:70px auto 0 ;;margin-left: -250px;}
+#history{/*width:300px;*/height:418px;position:relative;margin:70px auto 0 ;;margin-left: -250px;}
 .title{height:95px;line-height:95px;text-indent:280px;}
 .title h2{color: #0a0a0a;font-size:18px;font-weight:500;}
 #circle{
@@ -49,12 +49,12 @@ body{color: #0d0d0d;font-size:12px;font-family: Times New Roman,"Microsoft YaHei
 .timeblock .nums{background-position:0px 0px;}
 .timeblock .numt{background-position:0px -24px;}
 .timeblock .numfo{background-position:0px -142px;}
-#content{height:355px;width:1180px;overflow:hidden;background:url(../imgs/mywork/vertical.png) no-repeat 434px 2px;padding-top:10px;}
+#content{height:355px;width:753px;overflow:hidden;background:url(../imgs/mywork/vertical.png) no-repeat 434px 2px;padding-top:10px;}
 .list{overflow:hidden;position:relative;}
 .list li{height:110px;vertical-align:bottom;overflow:hidden;position:relative;}
 .liwrap{height:55px;margin-top:28px;}
 .lileft{position:absolute;top:0;left:0px;height:55px;width:400px;line-height:55px;text-align:right;}
-.liright{position:absolute;top:0;right:0px;height:55px;width:700px;}
+.liright{position:absolute;top:0;right:0px;height:55px;width:300px;}
 .histt{height:35px;line-height:35px;}
 .hisct{font-size:14px;color: #343434;}
 .md{font-size:18px;color: #050505;}
@@ -78,7 +78,7 @@ body{color: #0d0d0d;font-size:12px;font-family: Times New Roman,"Microsoft YaHei
     -o-transition:all 0.3s linear;
     transition:all 0.3s linear;
 }
-#arrow{position:fixed;top:50%;left:600px;}
+#arrow{position:fixed;top:50%;left:40px;}
 *html #arrow{position:absolute;top:expression(eval(document.documentElement.scrollTop));margin-top:350px;}
 
 #arrow ul li{
