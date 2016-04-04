@@ -78,7 +78,7 @@ body{color: #0d0d0d;font-size:12px;font-family: Times New Roman,"Microsoft YaHei
     -o-transition:all 0.3s linear;
     transition:all 0.3s linear;
 }
-#arrow{position:fixed;top:50%;left:40px;}
+#arrow{position:fixed;top:50%;left:50px;}
 *html #arrow{position:absolute;top:expression(eval(document.documentElement.scrollTop));margin-top:350px;}
 
 #arrow ul li{
