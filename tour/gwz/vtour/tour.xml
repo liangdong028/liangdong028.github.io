@@ -304,6 +304,7 @@
 		</image>
 
 		<!-- place your scene hotspots here -->
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-9.101" atv="27.472" linkedscene="scene_htl0" />
 
 	</scene>
 
