@@ -1,0 +1,333 @@
+<krpano version="1.19" title="Virtual Tour">
+
+	<include url="skin/vtourskin.xml" />
+	<events name="nadirlogorotation"
+        keep="true"
+		onviewchange="if(hotspot[nadirlogo].rotatewithview, set(hotspot[nadirlogo].rotate,get(view.hlookat)) );"
+	        />	
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="false"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_zoombuttons="false"
+	               gyro="true"
+	               webvr="true"
+	               littleplanetintro="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext="loading..."
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<include url="skin/vtourskin_design_ultra_light.xml" /> 
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+
+
+	<!-- startup action - load the first scene -->
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+	</action>
+	<hotspot name="nadirlogo"   url="xi.png" 	      ath="0" 		keep="true"   atv="90" 	   distorted="true" 	         scale="1.1" 	   rotate="0.0" 	rotatewithview="false" 	       
+	onclick="switch(rotatewithview); invalidatescreen();" 	         
+	/>
+
+	
+	<scene name="scene_gwz-0" title="gwz-0" onstart="" havevrimage="true" thumburl="panos/gwz-0.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-24.219" vlookat="2.490" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/gwz-0.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/gwz-0.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/gwz-0.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="151.952" atv="38.166" linkedscene="scene_gwz-1" />
+		<hotspot name="weichatlogo" 	  url="xi.png" 	    ath="0" 			   atv="-90" 	         distorted="true" 	     scale="1.1" 	         rotate="0.0" 	rotatewithview1="false"       
+		onclick="switch(rotatewithview1); invalidatescreen();" 	/>
+
+	</scene>
+
+	<scene name="scene_gwz-1" title="gwz-1" onstart="" havevrimage="true" thumburl="panos/gwz-1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/gwz-1.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/gwz-1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/gwz-1.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="3.219" atv="24.215" linkedscene="scene_gwz-0" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-170.411" atv="37.209" linkedscene="scene_gwz2" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="157.627" atv="31.128" linkedscene="scene_gwz1" />
+		<hotspot name="weichatlogo" 	  url="xi.png" 	    ath="0" 			   atv="-90" 	         distorted="true" 	     scale="1.1" 	         rotate="0.0" 	rotatewithview1="false"       
+		onclick="switch(rotatewithview1); invalidatescreen();" 	/>
+	</scene>
+
+	<scene name="scene_gwz-2" title="gwz-2" onstart="" havevrimage="true" thumburl="panos/gwz-2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="1.657" vlookat="15.650" fovtype="MFOV" fov="108.524" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/gwz-2.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/gwz-2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/gwz-2.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="15.051" atv="37.507" linkedscene="scene_gwz4" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="178.250" atv="43.381" linkedscene="scene_gwz3" />
+		<hotspot name="weichatlogo" 	  url="xi.png" 	    ath="0" 			   atv="-90" 	         distorted="true" 	     scale="1.1" 	         rotate="0.0" 	rotatewithview1="false"       
+		onclick="switch(rotatewithview1); invalidatescreen();" 	/>
+
+	</scene>
+
+	<scene name="scene_gwz0" title="gwz0" onstart="" havevrimage="true" thumburl="panos/gwz0.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-144.473" vlookat="12.901" fovtype="MFOV" fov="82.358" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/gwz0.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/gwz0.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/gwz0.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-146.125" atv="27.417" linkedscene="scene_gwz1" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="32.837" atv="15.849" linkedscene="scene_htl0" />
+		<hotspot name="weichatlogo" 	  url="xi.png" 	    ath="0" 			   atv="-90" 	         distorted="true" 	     scale="1" 	         rotate="0.0" 	rotatewithview1="false"       
+		onclick="switch(rotatewithview1); invalidatescreen();" 	/>
+	</scene>
+
+	<scene name="scene_gwz1" title="gwz1" onstart="" havevrimage="true" thumburl="panos/gwz1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="166.691" vlookat="17.671" fovtype="MFOV" fov="102.887" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/gwz1.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/gwz1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/gwz1.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="158.981" atv="43.881" linkedscene="scene_gwz2" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-165.880" atv="44.730" linkedscene="scene_gwz-1" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-2.763" atv="41.594" linkedscene="scene_gwz0" />
+		<hotspot name="weichatlogo" 	  url="xi.png" 	    ath="0" 			   atv="-90" 	         distorted="true" 	     scale="1.1" 	         rotate="0.0" 	rotatewithview1="false"       
+		onclick="switch(rotatewithview1); invalidatescreen();" 	/>
+	</scene>
+
+	<scene name="scene_gwz2" title="gwz2" onstart="" havevrimage="true" thumburl="panos/gwz2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="216.134" vlookat="1.767" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/gwz2.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/gwz2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/gwz2.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-165.946" atv="43.406" linkedscene="scene_gwz3" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-72.132" atv="30.967" linkedscene="scene_gwz-1" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="18.524" atv="38.383" linkedscene="scene_gwz1" />
+		<hotspot name="weichatlogo" 	  url="xi.png" 	    ath="0" 			   atv="-90" 	         distorted="true" 	     scale="1.1" 	         rotate="0.0" 	rotatewithview1="false"       
+		onclick="switch(rotatewithview1); invalidatescreen();" 	/>
+	</scene>
+
+	<scene name="scene_gwz3" title="gwz3" onstart="" havevrimage="true" thumburl="panos/gwz3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-144.146" vlookat="3.381" fovtype="MFOV" fov="108.713" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/gwz3.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/gwz3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/gwz3.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-154.985" atv="29.566" linkedscene="scene_gwz-2" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="22.559" atv="43.868" linkedscene="scene_gwz2" />
+		<hotspot name="weichatlogo" 	  url="xi.png" 	    ath="0" 			   atv="-90" 	         distorted="true" 	     scale="1.1" 	         rotate="0.0" 	rotatewithview1="false"       
+		onclick="switch(rotatewithview1); invalidatescreen();" 	/>
+	</scene>
+
+	<scene name="scene_gwz4" title="gwz4" onstart="" havevrimage="true" thumburl="panos/gwz4.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-26.399" vlookat="9.982" fovtype="MFOV" fov="105.730" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/gwz4.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/gwz4.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/gwz4.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="4.707" atv="42.731" linkedscene="scene_gwz-2" />
+		
+	</scene>
+
+	<scene name="scene_htl0" title="htl0" onstart="" havevrimage="true" thumburl="panos/htl0.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-159.746" vlookat="15.936" fovtype="MFOV" fov="105.730" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/htl0.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/htl0.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/htl0.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-168.623" atv="31.498" linkedscene="scene_htl1" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="11.120" atv="47.945" linkedscene="scene_gwz0" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="45.169" atv="51.452" linkedscene="scene_htl2" />
+		
+	</scene>
+
+	<scene name="scene_htl1" title="htl1" onstart="" havevrimage="true" thumburl="panos/htl1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/htl1.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/htl1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/htl1.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_htl2" title="htl2" onstart="" havevrimage="true" thumburl="panos/htl2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="54.166" vlookat="12.664" fovtype="MFOV" fov="102.887" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/htl2.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/htl2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/htl2.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-21.112" atv="53.231" linkedscene="scene_htl0" />
+		
+
+	</scene>
+
+
+</krpano>
