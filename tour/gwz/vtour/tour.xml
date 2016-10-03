@@ -69,7 +69,7 @@
 
 	<!-- startup action - load the first scene -->
 	<action name="startup" autorun="onstart">
-		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[3].name); );
 		loadscene(get(startscene), null, MERGE);
 		if(startactions !== null, startactions() );
 	</action>
