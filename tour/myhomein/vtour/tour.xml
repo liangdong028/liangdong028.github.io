@@ -75,89 +75,89 @@
 
 
 	
-	<scene name="scene__Group_10_-DSC_1079_DSC_1086-8_images" title="%5BGroup 10%5D-DSC_1079_DSC_1086-8 images" onstart="" havevrimage="true" thumburl="panos/_Group_10_-DSC_1079_DSC_1086-8_images.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_DSC_10868_images" title="%5BGroup 10%5D-DSC_1079_DSC_1086-8 images" onstart="" havevrimage="true" thumburl="panos/DSC_10868_images.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-157.203" vlookat="8.339" fovtype="MFOV" fov="102.887" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/_Group_10_-DSC_1079_DSC_1086-8_images.tiles/preview.jpg" />
+		<preview url="panos/DSC_10868_images.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
 			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="panos/_Group_10_-DSC_1079_DSC_1086-8_images.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/DSC_10868_images.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 		<image if="webvr.isenabled">
-			<cube url="panos/_Group_10_-DSC_1079_DSC_1086-8_images.tiles/vr/pano_%s.jpg" />
+			<cube url="panos/DSC_10868_images.tiles/vr/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-99.779" atv="52.778" linkedscene="scene__group_9_-dsc_1069_dsc_1077-8_images" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-99.779" atv="52.778" linkedscene="scene_dsc_10778_images" />
 
 	</scene>
 
-	<scene name="scene__Group_11_-DSC_1087_DSC_1094-8_images" title="%5BGroup 11%5D-DSC_1087_DSC_1094-8 images" onstart="" havevrimage="true" thumburl="panos/_Group_11_-DSC_1087_DSC_1094-8_images.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_DSC_10948_images" title="%5BGroup 11%5D-DSC_1087_DSC_1094-8 images" onstart="" havevrimage="true" thumburl="panos/DSC_10948_images.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="54.893" vlookat="10.630" fovtype="MFOV" fov="105.730" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/_Group_11_-DSC_1087_DSC_1094-8_images.tiles/preview.jpg" />
+		<preview url="panos/DSC_10948_images.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
 			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="panos/_Group_11_-DSC_1087_DSC_1094-8_images.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/DSC_10948_images.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 		<image if="webvr.isenabled">
-			<cube url="panos/_Group_11_-DSC_1087_DSC_1094-8_images.tiles/vr/pano_%s.jpg" />
+			<cube url="panos/DSC_10948_images.tiles/vr/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="24.406" atv="56.825" linkedscene="scene__group_2_-dsc_1006_dsc_1013-8_images" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="24.406" atv="56.825" linkedscene="scene_dsc_10138_images" />
 
 	</scene>
 
-	<scene name="scene__Group_1_-DSC_0995_DSC_1004-9_images" title="%5BGroup 1%5D-DSC_0995_DSC_1004-9 images" onstart="" havevrimage="true" thumburl="panos/_Group_1_-DSC_0995_DSC_1004-9_images.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_DSC_10049_images" title="%5BGroup 1%5D-DSC_0995_DSC_1004-9 images" onstart="" havevrimage="true" thumburl="panos/DSC_10049_images.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="21.254" vlookat="14.577" fovtype="MFOV" fov="100.085" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/_Group_1_-DSC_0995_DSC_1004-9_images.tiles/preview.jpg" />
+		<preview url="panos/DSC_10049_images.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
 			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="panos/_Group_1_-DSC_0995_DSC_1004-9_images.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/DSC_10049_images.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 		<image if="webvr.isenabled">
-			<cube url="panos/_Group_1_-DSC_0995_DSC_1004-9_images.tiles/vr/pano_%s.jpg" />
+			<cube url="panos/DSC_10049_images.tiles/vr/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="95.359" atv="34.899" linkedscene="scene__group_9_-dsc_1069_dsc_1077-8_images" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="43.265" atv="45.665" linkedscene="scene__group_11_-dsc_1087_dsc_1094-8_images" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="95.359" atv="34.899" linkedscene="scene_dsc_10778_images" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="43.265" atv="45.665" linkedscene="scene_dsc_10948_images" />
 
 	</scene>
 
-	<scene name="scene__Group_2_-DSC_1006_DSC_1013-8_images" title="%5BGroup 2%5D-DSC_1006_DSC_1013-8 images" onstart="" havevrimage="true" thumburl="panos/_Group_2_-DSC_1006_DSC_1013-8_images.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_DSC_10138_images" title="%5BGroup 2%5D-DSC_1006_DSC_1013-8 images" onstart="" havevrimage="true" thumburl="panos/DSC_10138_images.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="185.889" vlookat="8.499" fovtype="MFOV" fov="102.887" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/_Group_2_-DSC_1006_DSC_1013-8_images.tiles/preview.jpg" />
+		<preview url="panos/DSC_10138_images.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
 			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="panos/_Group_2_-DSC_1006_DSC_1013-8_images.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/DSC_10138_images.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 		<image if="webvr.isenabled">
-			<cube url="panos/_Group_2_-DSC_1006_DSC_1013-8_images.tiles/vr/pano_%s.jpg" />
+			<cube url="panos/DSC_10138_images.tiles/vr/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-76.068" atv="41.381" linkedscene="scene__group_11_-dsc_1087_dsc_1094-8_images" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="152.631" atv="36.734" linkedscene="scene__group_1_-dsc_0995_dsc_1004-9_images" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-76.068" atv="41.381" linkedscene="scene_dsc_10948_images" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="152.631" atv="36.734" linkedscene="scene_dsc_10049_images" />
 		<hotspot name="spot3" style="skin_hotspotstyle" ath="123.783" atv="25.503" linkedscene="scene_dsc_1061_panorama" />
 		<hotspot name="spot4" style="skin_hotspotstyle" ath="96.711" atv="40.138" linkedscene="scene_dsc_1031_panorama" />
 		<hotspot name="spot5" style="skin_hotspotstyle" ath="79.048" atv="40.418" linkedscene="scene_dsc_1017_panorama" />
@@ -165,25 +165,25 @@
 
 	</scene>
 
-	<scene name="scene__Group_9_-DSC_1069_DSC_1077-8_images" title="%5BGroup 9%5D-DSC_1069_DSC_1077-8 images" onstart="" havevrimage="true" thumburl="panos/_Group_9_-DSC_1069_DSC_1077-8_images.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_DSC_10778_images" title="%5BGroup 9%5D-DSC_1069_DSC_1077-8 images" onstart="" havevrimage="true" thumburl="panos/DSC_10778_images.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/_Group_9_-DSC_1069_DSC_1077-8_images.tiles/preview.jpg" />
+		<preview url="panos/DSC_10778_images.tiles/preview.jpg" />
 
 		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
 			<level tiledimagewidth="1024" tiledimageheight="1024">
-				<cube url="panos/_Group_9_-DSC_1069_DSC_1077-8_images.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+				<cube url="panos/DSC_10778_images.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
 			</level>
 		</image>
 
 		<image if="webvr.isenabled">
-			<cube url="panos/_Group_9_-DSC_1069_DSC_1077-8_images.tiles/vr/pano_%s.jpg" />
+			<cube url="panos/DSC_10778_images.tiles/vr/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="9.734" atv="44.343" linkedscene="scene__group_1_-dsc_0995_dsc_1004-9_images" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-174.696" atv="43.613" linkedscene="scene__group_10_-dsc_1079_dsc_1086-8_images" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="9.734" atv="44.343" linkedscene="scene_dsc_10049_images" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-174.696" atv="43.613" linkedscene="scene_dsc_10868_images" />
 
 	</scene>
 
@@ -204,7 +204,7 @@
 		</image>
 
 		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-66.302" atv="36.004" linkedscene="scene__group_2_-dsc_1006_dsc_1013-8_images" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-66.302" atv="36.004" linkedscene="scene_dsc_10138_images" />
 
 	</scene>
 
@@ -225,7 +225,7 @@
 		</image>
 
 		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-14.384" atv="41.252" linkedscene="scene__group_2_-dsc_1006_dsc_1013-8_images" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-14.384" atv="41.252" linkedscene="scene_dsc_10138_images" />
 		
 
 	</scene>
@@ -247,7 +247,7 @@
 		</image>
 
 		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-87.251" atv="52.227" linkedscene="scene__group_2_-dsc_1006_dsc_1013-8_images" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-87.251" atv="52.227" linkedscene="scene_dsc_10138_images" />
 
 	</scene>
 
@@ -268,7 +268,7 @@
 		</image>
 
 		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="114.359" atv="49.399" linkedscene="scene__group_11_-dsc_1087_dsc_1094-8_images" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="114.359" atv="49.399" linkedscene="scene_dsc_10948_images" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="-35.597" atv="54.437" linkedscene="scene_dsc_1051_panorama" />
 
 	</scene>
@@ -311,7 +311,7 @@
 		</image>
 
 		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="69.272" atv="44.354" linkedscene="scene__group_2_-dsc_1006_dsc_1013-8_images" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="69.272" atv="44.354" linkedscene="scene_dsc_10138_images" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="84.738" atv="38.189" linkedscene="scene_dsc_1016_panorama" />
 
 	</scene>
@@ -328,7 +328,7 @@
 		</image>
 
 		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="109.782" atv="50.690" linkedscene="scene__group_2_-dsc_1006_dsc_1013-8_images" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="109.782" atv="50.690" linkedscene="scene_dsc_10138_images" />
 
 	</scene>
 
