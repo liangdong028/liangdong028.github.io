@@ -156,12 +156,12 @@
 		</image>
 
 		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-76.068" atv="41.381" linkedscene="scene_dsc_10948_images" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="152.631" atv="36.734" linkedscene="scene_dsc_10049_images" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="123.783" atv="25.503" linkedscene="scene_dsc_1061_panorama" />
-		<hotspot name="spot4" style="skin_hotspotstyle" ath="96.711" atv="40.138" linkedscene="scene_dsc_1031_panorama" />
-		<hotspot name="spot5" style="skin_hotspotstyle" ath="79.048" atv="40.418" linkedscene="scene_dsc_1017_panorama" />
-		<hotspot name="spot6" style="skin_hotspotstyle" ath="38.813" atv="34.869" linkedscene="scene_dsc_1040_panorama" />
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="20.984" atv="40.767" linkedscene="scene_dsc_10948_images" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-106.093" atv="38.015" linkedscene="scene_dsc_10049_images" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-133.276" atv="40.233" linkedscene="scene_dsc_1061_panorama" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-165.426" atv="42.119" linkedscene="scene_dsc_1031_panorama" />
+		<hotspot name="spot5" style="skin_hotspotstyle" ath="163.500" atv="40.386" linkedscene="scene_dsc_1017_panorama" />
+		<hotspot name="spot6" style="skin_hotspotstyle" ath="137.033" atv="40.088" linkedscene="scene_dsc_1040_panorama" />
 
 	</scene>
 
