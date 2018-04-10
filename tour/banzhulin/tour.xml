@@ -70,8 +70,8 @@
 	<autorotate enabled="true"  
             waittime="1.0"   
             speed="-3.0"   
-            horizon="30.0"   
-            tofov="93"   
+            horizon="0.0"   
+            tofov="0"   
             />  
 
 	<!-- startup action - load the first scene -->
