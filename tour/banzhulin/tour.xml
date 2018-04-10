@@ -1,0 +1,287 @@
+<krpano version="1.19" title="Virtual Tour">
+
+<include url="skin/vtourskin.xml" />
+<hotspot name="nadirlogo"   url="butian.png"   ath="0"  keep="true" atv="90"   distorted="true" 	scale="0.6"  rotate="0.0" 	rotatewithview="false" 	       
+	onclick="switch(rotatewithview); invalidatescreen();" />
+
+<events name="nadirlogorotation" keep="true"
+		onviewchange="if(hotspot[nadirlogo].rotatewithview, set(hotspot[nadirlogo].rotate,get(view.hlookat)) );"
+	        />	
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="false"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_zoombuttons="false"
+	               gyro="true"
+	               webvr="true"
+	               littleplanetintro="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="true"
+	               thumbs_text="true"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="true"
+	               thumbs_scrollbuttons="true"
+	               thumbs_scrollindicator="true"
+	               thumbs_loop="true"
+	               tooltips_buttons="true"
+	               tooltips_thumbs="true"
+	               tooltips_hotspots="true"
+	               tooltips_mapspots="true"
+	               deeplinking="true"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext="loading..."
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+		<include url="skin/vtourskin_design_ultra_light.xml" /> 
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	<autorotate enabled="true"  
+            waittime="1.0"   
+            speed="-3.0"   
+            horizon="30.0"   
+            tofov="93"   
+            />  
+
+	<!-- startup action - load the first scene -->
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+	</action>
+
+
+	
+	<scene name="scene_DSC_2676_Panorama" title="斑竹林" onstart="" havevrimage="true" thumburl="panos/DSC_2676_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-116.974" vlookat="3.394" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/DSC_2676_Panorama.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/DSC_2676_Panorama.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/DSC_2676_Panorama.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_DSC_2590_Panorama" title="斑竹林" onstart="" havevrimage="true" thumburl="panos/DSC_2590_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-25.950" vlookat="2.294" fovtype="MFOV" fov="98.802" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/DSC_2590_Panorama.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/DSC_2590_Panorama.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/DSC_2590_Panorama.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_DSC_2603_Panorama" title="新津斑竹林景区" onstart="" havevrimage="true" thumburl="panos/DSC_2603_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-169.396" vlookat="4.241" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/DSC_2603_Panorama.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/DSC_2603_Panorama.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/DSC_2603_Panorama.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_DSC_2614_Panorama" title="斑竹林" onstart="" havevrimage="true" thumburl="panos/DSC_2614_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-3.647" vlookat="-4.037" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/DSC_2614_Panorama.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/DSC_2614_Panorama.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/DSC_2614_Panorama.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_DSC_2625_Panorama" title="斑竹林" onstart="" havevrimage="true" thumburl="panos/DSC_2625_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="59.553" vlookat="-1.020" fovtype="MFOV" fov="108.762" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/DSC_2625_Panorama.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/DSC_2625_Panorama.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/DSC_2625_Panorama.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_DSC_2637_Panorama" title="斑竹林景区" onstart="" havevrimage="true" thumburl="panos/DSC_2637_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-30.014" vlookat="-4.848" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/DSC_2637_Panorama.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/DSC_2637_Panorama.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/DSC_2637_Panorama.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_DSC_2647_Panorama" title="新津斑竹林景区" onstart="" havevrimage="true" thumburl="panos/DSC_2647_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="30.733" vlookat="0.213" fovtype="MFOV" fov="108.762" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/DSC_2647_Panorama.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/DSC_2647_Panorama.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/DSC_2647_Panorama.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_DSC_2656_Panorama" title="新津斑竹林" onstart="" havevrimage="true" thumburl="panos/DSC_2656_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="131.705" vlookat="5.164" fovtype="MFOV" fov="108.762" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/DSC_2656_Panorama.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/DSC_2656_Panorama.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/DSC_2656_Panorama.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_DSC_2667_Panorama" title="斑竹林" onstart="" havevrimage="true" thumburl="panos/DSC_2667_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="19.982" vlookat="3.881" fovtype="MFOV" fov="108.762" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/DSC_2667_Panorama.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/DSC_2667_Panorama.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/DSC_2667_Panorama.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_DSC_2676_Panorama" title="斑竹林景区" onstart="" havevrimage="true" thumburl="panos/DSC_2676_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-14.925" vlookat="21.163" fovtype="MFOV" fov="119.932" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/DSC_2676_Panorama.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="1024" tiledimageheight="1024">
+				<cube url="panos/DSC_2676_Panorama.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/DSC_2676_Panorama.tiles/vr/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+
+</krpano>
